@@ -16,12 +16,16 @@
 		5E5B15C01D990EA000B08685 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5B15BD1D990EA000B08685 /* Alamofire.framework */; };
 		5E5B15C11D990EA000B08685 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5B15BE1D990EA000B08685 /* Kingfisher.framework */; };
 		5E5B15C21D990EA000B08685 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5B15BF1D990EA000B08685 /* SwiftyJSON.framework */; };
+		5E5B15EC1D99173400B08685 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5B15E01D99173400B08685 /* Common.swift */; };
+		5E5B15EE1D99173400B08685 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5B15E21D99173400B08685 /* UIButton+Extension.swift */; };
+		5E5B15EF1D99173400B08685 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5B15E31D99173400B08685 /* UIColor+Extension.swift */; };
+		5E5B15F11D99173400B08685 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5B15E51D99173400B08685 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5E5B15A41D9902C700B08685 /* Keep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E5B15A71D9902C700B08685 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5E5B15A91D9902C700B08685 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5E5B15A91D9902C700B08685 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../ViewController.swift; sourceTree = "<group>"; };
 		5E5B15AC1D9902C700B08685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E5B15AF1D9902C700B08685 /* Keep.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Keep.xcdatamodel; sourceTree = "<group>"; };
 		5E5B15B11D9902C700B08685 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -30,6 +34,10 @@
 		5E5B15BD1D990EA000B08685 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		5E5B15BE1D990EA000B08685 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		5E5B15BF1D990EA000B08685 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		5E5B15E01D99173400B08685 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		5E5B15E21D99173400B08685 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		5E5B15E31D99173400B08685 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		5E5B15E51D99173400B08685 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +74,9 @@
 		5E5B15A61D9902C700B08685 /* Keep */ = {
 			isa = PBXGroup;
 			children = (
-				5E5B15A71D9902C700B08685 /* AppDelegate.swift */,
-				5E5B15A91D9902C700B08685 /* ViewController.swift */,
 				5E5B15AB1D9902C700B08685 /* Main.storyboard */,
+				5E5B15A71D9902C700B08685 /* AppDelegate.swift */,
+				5E5B15C71D99173400B08685 /* Classes */,
 				5E5B15B11D9902C700B08685 /* Assets.xcassets */,
 				5E5B15B31D9902C700B08685 /* LaunchScreen.storyboard */,
 				5E5B15B61D9902C700B08685 /* Info.plist */,
@@ -85,6 +93,226 @@
 				5E5B15BF1D990EA000B08685 /* SwiftyJSON.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E5B15C71D99173400B08685 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5E5B15D01D99173400B08685 /* Main */,
+				5E5B15D91D99173400B08685 /* Sport */,
+				5E5B15CC1D99173400B08685 /* Discover */,
+				5E5B15C81D99173400B08685 /* Attention */,
+				5E5B15D41D99173400B08685 /* Profile */,
+				5E5B15D81D99173400B08685 /* Resource */,
+				5E5B15DD1D99173400B08685 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5E5B15C81D99173400B08685 /* Attention */ = {
+			isa = PBXGroup;
+			children = (
+				5E5B15C91D99173400B08685 /* Controller */,
+				5E5B15CA1D99173400B08685 /* Modal */,
+				5E5B15CB1D99173400B08685 /* View */,
+			);
+			path = Attention;
+			sourceTree = "<group>";
+		};
+		5E5B15C91D99173400B08685 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5E5B15CA1D99173400B08685 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		5E5B15CB1D99173400B08685 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5E5B15CC1D99173400B08685 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				5E5B15CD1D99173400B08685 /* Controller */,
+				5E5B15CE1D99173400B08685 /* Modal */,
+				5E5B15CF1D99173400B08685 /* View */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		5E5B15CD1D99173400B08685 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5E5B15CE1D99173400B08685 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		5E5B15CF1D99173400B08685 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5E5B15D01D99173400B08685 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5E5B15D11D99173400B08685 /* Controller */,
+				5E5B15D21D99173400B08685 /* Modal */,
+				5E5B15D31D99173400B08685 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5E5B15D11D99173400B08685 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5E5B15D21D99173400B08685 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		5E5B15D31D99173400B08685 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5E5B15A91D9902C700B08685 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5E5B15D41D99173400B08685 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5E5B15D51D99173400B08685 /* Controller */,
+				5E5B15D61D99173400B08685 /* Modal */,
+				5E5B15D71D99173400B08685 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		5E5B15D51D99173400B08685 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5E5B15D61D99173400B08685 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		5E5B15D71D99173400B08685 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5E5B15D81D99173400B08685 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		5E5B15D91D99173400B08685 /* Sport */ = {
+			isa = PBXGroup;
+			children = (
+				5E5B15DA1D99173400B08685 /* Controller */,
+				5E5B15DB1D99173400B08685 /* Modal */,
+				5E5B15DC1D99173400B08685 /* View */,
+			);
+			path = Sport;
+			sourceTree = "<group>";
+		};
+		5E5B15DA1D99173400B08685 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5E5B15DB1D99173400B08685 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		5E5B15DC1D99173400B08685 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5E5B15DD1D99173400B08685 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				5E5B15DE1D99173400B08685 /* 3rdLib */,
+				5E5B15DF1D99173400B08685 /* Category */,
+				5E5B15E71D99173400B08685 /* Config */,
+				5E5B15E81D99173400B08685 /* tools */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		5E5B15DE1D99173400B08685 /* 3rdLib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 3rdLib;
+			sourceTree = "<group>";
+		};
+		5E5B15DF1D99173400B08685 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				5E5B15E01D99173400B08685 /* Common.swift */,
+				5E5B15E21D99173400B08685 /* UIButton+Extension.swift */,
+				5E5B15E31D99173400B08685 /* UIColor+Extension.swift */,
+				5E5B15E51D99173400B08685 /* UIView+Extension.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		5E5B15E71D99173400B08685 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		5E5B15E81D99173400B08685 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,9 +409,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E5B15EF1D99173400B08685 /* UIColor+Extension.swift in Sources */,
+				5E5B15EC1D99173400B08685 /* Common.swift in Sources */,
 				5E5B15B01D9902C700B08685 /* Keep.xcdatamodeld in Sources */,
+				5E5B15F11D99173400B08685 /* UIView+Extension.swift in Sources */,
 				5E5B15AA1D9902C700B08685 /* ViewController.swift in Sources */,
 				5E5B15A81D9902C700B08685 /* AppDelegate.swift in Sources */,
+				5E5B15EE1D99173400B08685 /* UIButton+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +585,7 @@
 				5E5B15BB1D9902C700B08685 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
