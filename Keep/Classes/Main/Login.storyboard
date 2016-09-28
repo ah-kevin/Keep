@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="BrW-PU-C7m">
+                            <pageControl opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="BrW-PU-C7m">
                                 <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="currentPageIndicatorTintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </pageControl>
@@ -45,6 +45,11 @@
                                     <constraint firstAttribute="width" constant="150" id="yaC-lk-fay"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K52-VU-R4S">
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -55,6 +60,8 @@
                             <constraint firstAttribute="trailingMargin" secondItem="4Zb-Ph-RWd" secondAttribute="trailing" constant="-3" id="Vyg-vt-7cP"/>
                             <constraint firstItem="Wc8-nM-7T0" firstAttribute="top" secondItem="BrW-PU-C7m" secondAttribute="bottom" constant="65" id="aZ8-Qg-JK4"/>
                             <constraint firstItem="BrW-PU-C7m" firstAttribute="centerX" secondItem="eDk-WZ-I6g" secondAttribute="centerX" id="chh-VD-7EI"/>
+                            <constraint firstItem="4Zb-Ph-RWd" firstAttribute="top" secondItem="K52-VU-R4S" secondAttribute="bottom" constant="26" id="qKd-C4-T2W"/>
+                            <constraint firstItem="K52-VU-R4S" firstAttribute="centerX" secondItem="BrW-PU-C7m" secondAttribute="centerX" id="qbO-da-4s3"/>
                             <constraint firstItem="4Zb-Ph-RWd" firstAttribute="baseline" secondItem="6Ik-cU-fpv" secondAttribute="firstBaseline" id="tPe-fM-7py"/>
                             <constraint firstItem="6Ik-cU-fpv" firstAttribute="leading" secondItem="eDk-WZ-I6g" secondAttribute="leadingMargin" id="tdI-VR-baJ"/>
                             <constraint firstItem="nRb-Km-Rhc" firstAttribute="top" secondItem="yxo-iZ-POz" secondAttribute="bottom" constant="185" id="uvI-mW-6Bq"/>
@@ -62,6 +69,10 @@
                             <constraint firstItem="6Ik-cU-fpv" firstAttribute="top" secondItem="4Zb-Ph-RWd" secondAttribute="top" id="yRc-s2-wuh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pageControl" destination="BrW-PU-C7m" id="l7r-HD-WEE"/>
+                        <outlet property="pagetitle" destination="K52-VU-R4S" id="fFc-L2-yWN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kg9-Ta-6rM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -26,3 +26,10 @@ let DG_ORANGE = UIColor(r: 255, g: 124, b: 0)
 let DG_GREEN = UIColor(r: 14, g: 168, b: 145)
 let DG_PICK = UIColor(r: 255, g: 80, b: 80)
 let DG_WHITE = UIColor(r: 214, g: 214, b: 214)
+
+//延迟方法
+func afterDelay(_ seconds:Double,completionHandle: @escaping ()->()){
+    DispatchQueue.main.asyncAfter(deadline: .now()+seconds) {
+        completionHandle()
+    }
+}
