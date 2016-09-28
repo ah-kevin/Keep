@@ -12,7 +12,6 @@
 		5E5B15AA1D9902C700B08685 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5B15A91D9902C700B08685 /* ViewController.swift */; };
 		5E5B15AD1D9902C700B08685 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E5B15AB1D9902C700B08685 /* Main.storyboard */; };
 		5E5B15B01D9902C700B08685 /* Keep.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E5B15AE1D9902C700B08685 /* Keep.xcdatamodeld */; };
-		5E5B15B21D9902C700B08685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E5B15B11D9902C700B08685 /* Assets.xcassets */; };
 		5E5B15B51D9902C700B08685 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E5B15B31D9902C700B08685 /* LaunchScreen.storyboard */; };
 		5E5B15C01D990EA000B08685 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5B15BD1D990EA000B08685 /* Alamofire.framework */; };
 		5E5B15C11D990EA000B08685 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5B15BE1D990EA000B08685 /* Kingfisher.framework */; };
@@ -272,6 +271,11 @@
 		5E5B17ED1D991D3D00B08685 /* CountryCode.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E5B16F21D991D3D00B08685 /* CountryCode.plist */; };
 		5E5B17EE1D991D3D00B08685 /* FilterItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E5B16F31D991D3D00B08685 /* FilterItem.plist */; };
 		5E5B17EF1D991D3D00B08685 /* MottoAndTips.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E5B16F41D991D3D00B08685 /* MottoAndTips.plist */; };
+		5EE38FB61D9B5C85000B4265 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EE38FB51D9B5C85000B4265 /* Profile.storyboard */; };
+		5EE38FB81D9B5DC3000B4265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE38FB71D9B5DC3000B4265 /* Assets.xcassets */; };
+		5EE38FBA1D9B61FF000B4265 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EE38FB91D9B61FF000B4265 /* Discover.storyboard */; };
+		5EE38FBC1D9B623E000B4265 /* Sport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EE38FBB1D9B623E000B4265 /* Sport.storyboard */; };
+		5EE38FBE1D9B628E000B4265 /* Attention.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EE38FBD1D9B628E000B4265 /* Attention.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -281,7 +285,6 @@
 		5E5B15A91D9902C700B08685 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../ViewController.swift; sourceTree = "<group>"; };
 		5E5B15AC1D9902C700B08685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E5B15AF1D9902C700B08685 /* Keep.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Keep.xcdatamodel; sourceTree = "<group>"; };
-		5E5B15B11D9902C700B08685 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E5B15B41D9902C700B08685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E5B15B61D9902C700B08685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E5B15BD1D990EA000B08685 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
@@ -542,6 +545,11 @@
 		5E5B16F21D991D3D00B08685 /* CountryCode.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = CountryCode.plist; sourceTree = "<group>"; };
 		5E5B16F31D991D3D00B08685 /* FilterItem.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = FilterItem.plist; sourceTree = "<group>"; };
 		5E5B16F41D991D3D00B08685 /* MottoAndTips.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = MottoAndTips.plist; sourceTree = "<group>"; };
+		5EE38FB51D9B5C85000B4265 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		5EE38FB71D9B5DC3000B4265 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5EE38FB91D9B61FF000B4265 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
+		5EE38FBB1D9B623E000B4265 /* Sport.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Sport.storyboard; sourceTree = "<group>"; };
+		5EE38FBD1D9B628E000B4265 /* Attention.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Attention.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -582,7 +590,7 @@
 				5E5B15AB1D9902C700B08685 /* Main.storyboard */,
 				5E5B15A71D9902C700B08685 /* AppDelegate.swift */,
 				5E5B15C71D99173400B08685 /* Classes */,
-				5E5B15B11D9902C700B08685 /* Assets.xcassets */,
+				5EE38FB71D9B5DC3000B4265 /* Assets.xcassets */,
 				5E5B15B31D9902C700B08685 /* LaunchScreen.storyboard */,
 				5E5B15B61D9902C700B08685 /* Info.plist */,
 				5E5B15AE1D9902C700B08685 /* Keep.xcdatamodeld */,
@@ -618,6 +626,7 @@
 		5E5B15C81D99173400B08685 /* Attention */ = {
 			isa = PBXGroup;
 			children = (
+				5EE38FBD1D9B628E000B4265 /* Attention.storyboard */,
 				5E5B15C91D99173400B08685 /* Controller */,
 				5E5B15CA1D99173400B08685 /* Modal */,
 				5E5B15CB1D99173400B08685 /* View */,
@@ -649,6 +658,7 @@
 		5E5B15CC1D99173400B08685 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				5EE38FB91D9B61FF000B4265 /* Discover.storyboard */,
 				5E5B15CD1D99173400B08685 /* Controller */,
 				5E5B15CE1D99173400B08685 /* Modal */,
 				5E5B15CF1D99173400B08685 /* View */,
@@ -712,6 +722,7 @@
 		5E5B15D41D99173400B08685 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				5EE38FB51D9B5C85000B4265 /* Profile.storyboard */,
 				5E5B15D51D99173400B08685 /* Controller */,
 				5E5B15D61D99173400B08685 /* Modal */,
 				5E5B15D71D99173400B08685 /* View */,
@@ -754,6 +765,7 @@
 		5E5B15D91D99173400B08685 /* Sport */ = {
 			isa = PBXGroup;
 			children = (
+				5EE38FBB1D9B623E000B4265 /* Sport.storyboard */,
 				5E5B15DA1D99173400B08685 /* Controller */,
 				5E5B15DB1D99173400B08685 /* Modal */,
 				5E5B15DC1D99173400B08685 /* View */,
@@ -1290,13 +1302,13 @@
 				5E5B17601D991D3D00B08685 /* N022.5.mp3 in Resources */,
 				5E5B179B1D991D3D00B08685 /* N077.mp3 in Resources */,
 				5E5B17831D991D3D00B08685 /* N053.mp3 in Resources */,
-				5E5B15B21D9902C700B08685 /* Assets.xcassets in Resources */,
 				5E5B17271D991D3D00B08685 /* Esideweight.mp3 in Resources */,
 				5E5B17E91D991D3D00B08685 /* Rtimecost.mp3 in Resources */,
 				5E5B17621D991D3D00B08685 /* N023.mp3 in Resources */,
 				5E5B17B61D991D3D00B08685 /* N104.mp3 in Resources */,
 				5E5B17EA1D991D3D00B08685 /* Rwarmup_complete.mp3 in Resources */,
 				5E5B17CC1D991D3D00B08685 /* Rbreak_record_duration.mp3 in Resources */,
+				5EE38FB61D9B5C85000B4265 /* Profile.storyboard in Resources */,
 				5E5B177E1D991D3D00B08685 /* N048.mp3 in Resources */,
 				5E5B17781D991D3D00B08685 /* N042.mp3 in Resources */,
 				5E5B17E61D991D3D00B08685 /* Rstretch_complete.mp3 in Resources */,
@@ -1308,6 +1320,7 @@
 				5E5B17CB1D991D3D00B08685 /* Rbreak_record_distance.mp3 in Resources */,
 				5E5B17CA1D991D3D00B08685 /* N160.mp3 in Resources */,
 				5E5B16F61D991D3D00B08685 /* ArchivoNarrow-Regular.otf in Resources */,
+				5EE38FBC1D9B623E000B4265 /* Sport.storyboard in Resources */,
 				5E5B17DF1D991D3D00B08685 /* Rpause_15_minutes.mp3 in Resources */,
 				5E5B16FF1D991D3D00B08685 /* B004.mp3 in Resources */,
 				5E5B17681D991D3D00B08685 /* N028.mp3 in Resources */,
@@ -1345,6 +1358,7 @@
 				5E5B17BF1D991D3D00B08685 /* N113.mp3 in Resources */,
 				5E5B170E1D991D3D00B08685 /* Eg_14_last_motion.mp3 in Resources */,
 				5E5B17881D991D3D00B08685 /* N058.mp3 in Resources */,
+				5EE38FBE1D9B628E000B4265 /* Attention.storyboard in Resources */,
 				5E5B17531D991D3D00B08685 /* N011.mp3 in Resources */,
 				5E5B17E21D991D3D00B08685 /* Rresume.mp3 in Resources */,
 				5E5B17301D991D3D00B08685 /* Eweight.mp3 in Resources */,
@@ -1366,6 +1380,7 @@
 				5E5B17D31D991D3D00B08685 /* Rgoal_complete_timecost.mp3 in Resources */,
 				5E5B17081D991D3D00B08685 /* Efive_group.mp3 in Resources */,
 				5E5B176C1D991D3D00B08685 /* N032.5.mp3 in Resources */,
+				5EE38FBA1D9B61FF000B4265 /* Discover.storyboard in Resources */,
 				5E5B17031D991D3D00B08685 /* Ecountdownend.mp3 in Resources */,
 				5E5B16FE1D991D3D00B08685 /* B002.mp3 in Resources */,
 				5E5B17AC1D991D3D00B08685 /* N094.mp3 in Resources */,
@@ -1409,6 +1424,7 @@
 				5E5B17381D991D3D00B08685 /* N001_R.mp3 in Resources */,
 				5E5B173C1D991D3D00B08685 /* N002_R.mp3 in Resources */,
 				5E5B17351D991D3D00B08685 /* N000.mp3 in Resources */,
+				5EE38FB81D9B5DC3000B4265 /* Assets.xcassets in Resources */,
 				5E5B17281D991D3D00B08685 /* Eslope.mp3 in Resources */,
 				5E5B173E1D991D3D00B08685 /* N003_R.mp3 in Resources */,
 				5E5B171C1D991D3D00B08685 /* Eminutes.mp3 in Resources */,
