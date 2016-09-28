@@ -3,6 +3,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,12 +20,55 @@
                     <view key="view" contentMode="scaleToFill" id="eDk-WZ-I6g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="BrW-PU-C7m">
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ik-cU-fpv">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="169" id="ELN-Fw-ZQE"/>
+                                </constraints>
+                                <state key="normal" title="注册">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Zb-Ph-RWd">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.44204837328767121" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="登陆">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="keep5" translatesAutoresizingMaskIntoConstraints="NO" id="nRb-Km-Rhc">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="yaC-lk-fay"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Ik-cU-fpv" firstAttribute="top" secondItem="BrW-PU-C7m" secondAttribute="bottom" constant="-1" id="3fs-wT-RJr"/>
+                            <constraint firstItem="nRb-Km-Rhc" firstAttribute="centerX" secondItem="BrW-PU-C7m" secondAttribute="centerX" id="8vI-PY-Vc4"/>
+                            <constraint firstAttribute="bottom" secondItem="6Ik-cU-fpv" secondAttribute="bottom" constant="20" symbolic="YES" id="MqS-dX-EQ2"/>
+                            <constraint firstItem="4Zb-Ph-RWd" firstAttribute="leading" secondItem="6Ik-cU-fpv" secondAttribute="trailing" constant="8" symbolic="YES" id="Vhs-AC-1EZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Zb-Ph-RWd" secondAttribute="trailing" constant="-3" id="Vyg-vt-7cP"/>
+                            <constraint firstItem="Wc8-nM-7T0" firstAttribute="top" secondItem="BrW-PU-C7m" secondAttribute="bottom" constant="65" id="aZ8-Qg-JK4"/>
+                            <constraint firstItem="BrW-PU-C7m" firstAttribute="centerX" secondItem="eDk-WZ-I6g" secondAttribute="centerX" id="chh-VD-7EI"/>
+                            <constraint firstItem="4Zb-Ph-RWd" firstAttribute="baseline" secondItem="6Ik-cU-fpv" secondAttribute="firstBaseline" id="tPe-fM-7py"/>
+                            <constraint firstItem="6Ik-cU-fpv" firstAttribute="leading" secondItem="eDk-WZ-I6g" secondAttribute="leadingMargin" id="tdI-VR-baJ"/>
+                            <constraint firstItem="nRb-Km-Rhc" firstAttribute="top" secondItem="yxo-iZ-POz" secondAttribute="bottom" constant="185" id="uvI-mW-6Bq"/>
+                            <constraint firstItem="6Ik-cU-fpv" firstAttribute="baseline" secondItem="4Zb-Ph-RWd" secondAttribute="firstBaseline" id="vyv-wV-0w8"/>
+                            <constraint firstItem="6Ik-cU-fpv" firstAttribute="top" secondItem="4Zb-Ph-RWd" secondAttribute="top" id="yRc-s2-wuh"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kg9-Ta-6rM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-78" y="47"/>
+            <point key="canvasLocation" x="-79.200000000000003" y="46.326836581709152"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="keep5" width="144" height="64"/>
+    </resources>
 </document>

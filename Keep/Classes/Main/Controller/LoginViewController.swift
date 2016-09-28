@@ -9,10 +9,11 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    var backgroundPlayer:BackgroundVideo?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        backgroundPlayer = BackgroundVideo(on: self, withVideoURL: "intro_video.mp4")
+        backgroundPlayer?.setupBackground()
         // Do any additional setup after loading the view.
     }
 
