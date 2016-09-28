@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E17C1AB1D9BB37600A79DC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E17C1AA1D9BB37600A79DC9 /* ViewController.swift */; };
 		5E17C1AD1D9BB61000A79DC9 /* BackgroundVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E17C1AC1D9BB61000A79DC9 /* BackgroundVideo.swift */; };
 		5E4D1CDB1D9A144F005D1495 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4D1CDA1D9A144F005D1495 /* SnapKit.framework */; };
 		5E5B15A81D9902C700B08685 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5B15A71D9902C700B08685 /* AppDelegate.swift */; };
@@ -283,7 +282,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5E17C1AA1D9BB37600A79DC9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5E17C1AC1D9BB61000A79DC9 /* BackgroundVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundVideo.swift; sourceTree = "<group>"; };
 		5E4D1CDA1D9A144F005D1495 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		5E5B15A41D9902C700B08685 /* Keep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keep.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -725,7 +723,6 @@
 		5E5B15D31D99173400B08685 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5E17C1AA1D9BB37600A79DC9 /* ViewController.swift */,
 				5E17C1AC1D9BB61000A79DC9 /* BackgroundVideo.swift */,
 			);
 			path = View;
@@ -1482,7 +1479,6 @@
 				5EE38FC21D9BA9CF000B4265 /* LoginViewController.swift in Sources */,
 				5E5B15EF1D99173400B08685 /* UIColor+Extension.swift in Sources */,
 				5E5B15EC1D99173400B08685 /* Common.swift in Sources */,
-				5E17C1AB1D9BB37600A79DC9 /* ViewController.swift in Sources */,
 				5E5B15B01D9902C700B08685 /* Keep.xcdatamodeld in Sources */,
 				5E5B15F11D99173400B08685 /* UIView+Extension.swift in Sources */,
 				5E5B15A81D9902C700B08685 /* AppDelegate.swift in Sources */,
