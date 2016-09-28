@@ -33,14 +33,16 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F5J-1J-Pu0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1258" y="301"/>
+            <point key="canvasLocation" x="925" y="301"/>
         </scene>
         <!--训练-->
         <scene sceneID="kN5-9I-iO6">
             <objects>
                 <navigationController id="Ub2-7X-35c" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="训练" image="train" id="0sm-rd-Ghw"/>
+                    <tabBarItem key="tabBarItem" title="训练" image="train" selectedImage="train_on" id="0sm-rd-Ghw"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DoM-hj-ryn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -51,10 +53,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="57b-d9-IBR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="436" y="301"/>
+            <point key="canvasLocation" x="135" y="301"/>
         </scene>
     </scenes>
     <resources>
         <image name="train" width="25" height="25"/>
+        <image name="train_on" width="25" height="25"/>
     </resources>
 </document>

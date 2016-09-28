@@ -14,6 +14,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexColor" red="0.90588235294117647" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="oK8-TG-D8Z">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
@@ -33,14 +34,16 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HYV-TA-kC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1956" y="278"/>
+            <point key="canvasLocation" x="1532" y="278"/>
         </scene>
         <!--发现-->
         <scene sceneID="3wX-NL-RKc">
             <objects>
                 <navigationController id="PIf-4R-bVL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="发现" image="discovery" id="xUV-Te-XE9"/>
+                    <tabBarItem key="tabBarItem" title="发现" image="discovery" selectedImage="discovery_on" id="xUV-Te-XE9"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ye1-Yj-9oN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -56,5 +59,6 @@
     </scenes>
     <resources>
         <image name="discovery" width="25" height="25"/>
+        <image name="discovery_on" width="25" height="25"/>
     </resources>
 </document>

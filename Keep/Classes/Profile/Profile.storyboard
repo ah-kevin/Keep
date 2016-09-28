@@ -29,9 +29,11 @@
         <scene sceneID="cA3-Jh-UV1">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tmn-IR-1pg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我" image="personal" id="Sh3-hx-huO"/>
+                    <tabBarItem key="tabBarItem" title="我" image="personal" selectedImage="personal_on" id="Sh3-hx-huO"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hmv-Gy-MjO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -48,5 +50,6 @@
     </scenes>
     <resources>
         <image name="personal" width="25" height="25"/>
+        <image name="personal_on" width="25" height="25"/>
     </resources>
 </document>

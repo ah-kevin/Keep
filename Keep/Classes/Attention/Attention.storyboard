@@ -39,8 +39,10 @@
         <scene sceneID="at4-No-Bvp">
             <objects>
                 <navigationController id="maS-QS-ZH4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="关注" image="trends" id="SRg-H3-pz5"/>
+                    <tabBarItem key="tabBarItem" title="关注" image="trends" selectedImage="trends_on" id="SRg-H3-pz5"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mqa-OT-czj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -51,10 +53,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c9Q-li-bVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1012" y="139"/>
+            <point key="canvasLocation" x="954" y="139"/>
         </scene>
     </scenes>
     <resources>
         <image name="trends" width="25" height="25"/>
+        <image name="trends_on" width="25" height="25"/>
     </resources>
 </document>

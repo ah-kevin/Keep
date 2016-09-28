@@ -18,6 +18,9 @@ let SCREEN_WIDTH = UIScreen.main.bounds.size.width
 let SCREEN_HEIGHT = UIScreen.main.bounds.size.height
 let COMPUTE_WIDTH = UIScreen.main.bounds.size.width / 375
 let COMPUTE_HEIGHT = UIScreen.main.bounds.size.height / 667
+
+let MAIN_COLOR = UIColor(r: 86, g: 79, b: 95)
+
 let DG_BLUE = UIColor(r: 56, g: 137, b: 216)
 let DG_ORANGE = UIColor(r: 255, g: 124, b: 0)
 let DG_GREEN = UIColor(r: 14, g: 168, b: 145)
