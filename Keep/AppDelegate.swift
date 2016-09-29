@@ -14,20 +14,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     var isLogin = false
-    var mainViewVC:UIViewController!
+    var mainViewVC:UIViewController?{
+//        t isLogin = false
+        return isLogin ? UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController() : UIStoryboard(name: "Login", bundle: nil).instantiateInitialViewController()
+    }
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         //设置Window
         window = UIWindow(frame: UIScreen.main.bounds)
-        if isLogin{
-            let mainStoryBoard = UIStoryboard.init(name: "Main", bundle: nil)
-            mainViewVC = mainStoryBoard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
-        }else{
-            let mainStoryBoard = UIStoryboard.init(name: "Login", bundle: nil)
-            mainViewVC = mainStoryBoard.instantiateViewController(withIdentifier: "MainViewController") as! LoginViewController
-        }
+
         window?.rootViewController = mainViewVC
         window?.makeKeyAndVisible()
-        //
+        
         //修改电池状态条
         UIApplication.shared.statusBarStyle = .lightContent
         //设置全局的全局的UINavigationBar

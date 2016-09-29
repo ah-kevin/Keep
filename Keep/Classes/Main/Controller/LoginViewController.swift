@@ -16,21 +16,35 @@ class LoginViewController: UIViewController ,UIScrollViewDelegate{
     @IBOutlet weak var scorllView: UIScrollView! //实现文字的滚动
     @IBOutlet weak var scrollH: NSLayoutConstraint!
     @IBOutlet weak var scrollW: NSLayoutConstraint!
+    
+    @IBAction func aaa(_ sender: AnyObject) {
+        timer.invalidate()
+        backgroundPlayer = nil
+        UIApplication.shared.keyWindow?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+    }
     var index = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         backgroundPlayer = BackgroundVideo(on: self, withVideoURL: "intro_video.mp4")
         backgroundPlayer?.setupBackground()
         // Do any additional setup after loading the view.
         pageControl.currentPage = index
         textGallery()
         timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(LoginViewController.nextText), userInfo: nil, repeats: true)
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+        
+    }
+    
     private func textGallery(){ //实现文字的滚动
         let textY:CGFloat = 0
         for index in 0..<pagetitles.count{
@@ -71,14 +85,19 @@ class LoginViewController: UIViewController ,UIScrollViewDelegate{
         KLog("deinit LoginView")
         timer.invalidate()
     }
-
-     // MARK: - Navigation
-     /*
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    
+    // MARK: - Navigation
+    
+    @IBAction func close(segue:UIStoryboardSegue){
+        //        if segue.source is LoginController{
+        //            timer.invalidate()
+        //            backgroundPlayer = nil
+        //            UIApplication.shared.keyWindow?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+        //
+        //        }
+            self.timer.invalidate()
+            self.backgroundPlayer = nil
+            UIApplication.shared.keyWindow?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+    }
     
 }
