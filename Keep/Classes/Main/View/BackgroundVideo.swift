@@ -34,9 +34,8 @@ class BackgroundVideo {
         }
     }
     deinit {
-        KLog("销毁backgroundVideo")
         if self.hasBeenUser{
-//            NotificationCenter.default.removeObserver(self, name: .AVPlayerItemDidPlayToEndTime, object: nil)
+            NotificationCenter.default.removeObserver(self, name: .AVPlayerItemDidPlayToEndTime, object: nil)
             NotificationCenter.default.removeObserver(self, name: .UIApplicationWillEnterForeground, object: nil)
         }
     }
@@ -60,8 +59,8 @@ class BackgroundVideo {
         self.backGroundPlayer?.play()
         
         //循环播放视频,
-//        NotificationCenter.default.addObserver(self, selector: #selector(self.loopVideo), name: .AVPlayerItemDidPlayToEndTime, object: nil)
-//        NotificationCenter.default.addObserver(self, selector: #selector(self.loopVideo), name: .UIApplicationWillEnterForeground, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.loopVideo), name: .AVPlayerItemDidPlayToEndTime, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.loopVideo), name: .UIApplicationWillEnterForeground, object: nil)
         self.hasBeenUser = true
     }
     @objc private func loopVideo(){

@@ -25,7 +25,6 @@ class LoginViewController: UIViewController ,UIScrollViewDelegate{
     var index = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         backgroundPlayer = BackgroundVideo(on: self, withVideoURL: "intro_video.mp4")
         backgroundPlayer?.setupBackground()
         // Do any additional setup after loading the view.
@@ -82,22 +81,8 @@ class LoginViewController: UIViewController ,UIScrollViewDelegate{
         pageControl.currentPage = page
     }
     deinit {
-        KLog("deinit LoginView")
         timer.invalidate()
     }
     
     // MARK: - Navigation
-    
-    @IBAction func close(segue:UIStoryboardSegue){
-        //        if segue.source is LoginController{
-        //            timer.invalidate()
-        //            backgroundPlayer = nil
-        //            UIApplication.shared.keyWindow?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
-        //
-        //        }
-            self.timer.invalidate()
-            self.backgroundPlayer = nil
-            UIApplication.shared.keyWindow?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
-    }
-    
 }

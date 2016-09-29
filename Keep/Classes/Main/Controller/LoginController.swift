@@ -18,7 +18,6 @@ class LoginController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-//        KLog(self.parent?.childViewControllers[0])
         // Do any additional setup after loading the view.
     }
     
